@@ -1,9 +1,13 @@
 documentation:
-- "**/*.md"
+  - changed-files:
+    - any-glob-to-any-file: '**/*.md'
 
 configuration:
-- "*.yml"
-- ".github/**/*"
+  - changed-files:
+    - any-glob-to-any-file: '*.yml'
+  - changed-files:
+    - any-glob-to-any-file: '.github/**/*'
 
 tests:
-- "**/*.test.*"
+  - changed-files:
+    - any-glob-to-any-file: '**/*.test.*'
