@@ -15,7 +15,7 @@ jobs:
           PR_URL: ${{ github.event.pull_request.html_url }}
           
       - name: Label when approved
-        uses: pullreminders/label-when-approved-action@main
+        uses: actions/labeler@v5
         env:
           APPROVALS: "1"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
