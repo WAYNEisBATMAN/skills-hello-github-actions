@@ -1,0 +1,61 @@
+# .github/labeler.yml
+# This file defines which labels to apply based on file changes
+
+# Documentation changes
+documentation:
+  - '**/*.md'
+  - 'docs/**/*'
+  - 'README*'
+
+# Frontend/UI changes
+frontend:
+  - 'src/components/**/*'
+  - 'public/**/*'
+  - '**/*.css'
+  - '**/*.scss'
+  - '**/*.html'
+  - '**/*.jsx'
+  - '**/*.tsx'
+
+# Backend changes
+backend:
+  - 'api/**/*'
+  - 'server/**/*'
+  - '**/*.py'
+  - '**/*.java'
+  - '**/*.go'
+
+# JavaScript/Node.js changes
+javascript:
+  - '**/*.js'
+  - '**/*.ts'
+  - 'package*.json'
+  - 'yarn.lock'
+
+# Configuration changes
+configuration:
+  - '*.yml'
+  - '*.yaml'
+  - '*.json'
+  - '.github/**/*'
+  - 'docker-compose*.yml'
+  - 'Dockerfile'
+
+# Test changes
+tests:
+  - 'test/**/*'
+  - 'tests/**/*'
+  - '__tests__/**/*'
+  - '**/*.test.js'
+  - '**/*.test.ts'
+  - '**/*.spec.js'
+  - '**/*.spec.ts'
+
+# Dependencies
+dependencies:
+  - 'package*.json'
+  - 'yarn.lock'
+  - 'requirements.txt'
+  - 'Pipfile'
+  - 'go.mod'
+  - 'pom.xml'
