@@ -24,12 +24,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
           
-      # - name: Auto-label PR based on files
-      #   uses: actions/labeler@v5
-      #   with:
-      #     repo-token: ${{ secrets.GITHUB_TOKEN }}
-      #     configuration-path: .github/labeler.yml
-      #     sync-labels: true
+      - name: Auto-label PR based on files
+        uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/labeler.yml
+          sync-labels: true
 
   label-approved:
     if: github.event.review.state == 'approved'
