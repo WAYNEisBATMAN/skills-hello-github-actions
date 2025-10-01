@@ -25,7 +25,7 @@
 #           PR_URL: ${{ github.event.pull_request.html_url }}
           
 #       - name: Auto-label PR based on files
-#         uses: actions/labeler@v5
+#         uses: actions/labeler@v6
 #         with:
 #           repo-token: ${{ secrets.GITHUB_TOKEN }}
 #           configuration-path: .github/labeler.yml
@@ -106,7 +106,7 @@ jobs:
           echo "=== End debugging ==="
           
       - name: Auto-label PR based on files
-        uses: actions/labeler@v5
+        uses: actions/labeler@v6
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/labeler.yml
